@@ -114,13 +114,13 @@
 	HEAD = magenta
 
 [color "diff"]
-	#plain =
-	#meta = yellow bold
-	#frag = magenta bold
-	#func =
+	plain = normal
+	#meta = white
+	frag = blue
+	#func = cyan
 	old = red
 	new = green
-	#commit =
+	commit = green bold
 
 [color "status"]
 	#header =
