@@ -27,6 +27,8 @@
 	check = diff --check
 	############ CHECKOUT
 	co = checkout
+	cob = checkout -b
+	cot = checkout -t
 	############ CHERRY PICK ############ 
 	pick = cherry-pick
 	cp = cherry-pick
