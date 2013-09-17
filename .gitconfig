@@ -65,6 +65,7 @@
 	news = log -p HEAD@{1}..HEAD@{0}
 	############ PUSH ############
 	pusht = push --tags
+	pushu = push --set-upstream
 	############ PULL ############
 	pullr = pull --rebase
 	prune-remotes = "!for remote in `git remote`; do git remote prune $remote; done"
