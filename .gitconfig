@@ -52,10 +52,12 @@
 	#l = "!git log --graph --pretty='tformat:%C(yellow)%h{%C(green)%ar{%C(bold blue)%an{%C(red)%d%C(reset) %s' $* | column -t -s '{' | less -FXRS"
 	lg = log --graph --pretty=format:'%C(blue)%h%Creset %C(red)%cr%Creset %C(auto)%d%Creset %s %C(cyan)[%an]%Creset' --abbrev-commit --date=relative
 	lgs = log --graph --pretty=format:'%C(blue)%h%Creset %C(red)%ad%Creset %C(auto)%d%Creset %s %C(cyan)[%an]%Creset' --abbrev-commit --date=short
+	lgl = log --graph --pretty=format:'%C(blue)%h%Creset %C(red)%ad%Creset %C(auto)%d%Creset %s %C(cyan)[%an]%Creset' --abbrev-commit --date=local
 	ls = log --pretty=format:"%C(blue)%h%C(auto)%d\\ %Creset%s%C(cyan)\\ [%cn]" --decorate
 	ll = log --pretty=format:"%C(blue)%h\\ %C(red)%ad%C(auto)%d\\ %Creset%s%C(cyan)\\ [%cn]" --decorate --numstat --date=relative
-	lds = log --pretty=format:"%C(blue)%h\\ %C(red)%ad%C(auto)%d\\ %Creset%s%C(cyan)\\ [%cn]" --decorate --date=short
 	ld = log --pretty=format:"%C(blue)%h\\ %C(red)%ad%C(auto)%d\\ %Creset%s%C(cyan)\\ [%cn]" --decorate --date=relative
+	lds = log --pretty=format:"%C(blue)%h\\ %C(red)%ad%C(auto)%d\\ %Creset%s%C(cyan)\\ [%cn]" --decorate --date=short
+	ldl = log --pretty=format:"%C(blue)%h\\ %C(red)%ad%C(auto)%d\\ %Creset%s%C(cyan)\\ [%cn]" --decorate --date=local
 	la = "!git config -l | grep alias | cut -c 7-"
 	ls-ignored = ls-files --exclude-standard --ignored --others
 	############ MERGE ############ 
