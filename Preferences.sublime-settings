@@ -45,7 +45,7 @@
 	"indent_subsequent_lines": true,
 
 	// Controls auto pairing of quotes, brackets etc
-	"auto_match_enabled": false,
+	"auto_match_enabled": true,
 
 	// Set to true to draw a border around the visible rectangle on the minimap.
 	// The color of the border will be determined by the "minimapBorder" key in
