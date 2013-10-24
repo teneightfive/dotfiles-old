@@ -1,159 +1,91 @@
 {
-	"color_scheme": "Packages/Color Scheme - Default/Twilight.tmTheme",
-	"font_size": 12.0,
-
-	// Hides the fold buttons unless the mouse is over the gutter
-	"fade_fold_buttons": false,
-
-	// Spacing between the gutter and the text
-	"margin": 0,
-
-	// Columns in which to display vertical rulers
-	// "rulers": [],
-
-	// The number of spaces a tab is considered equal to
-	"tab_size": 4,
-
-	// Set to true to insert spaces when tab is pressed
-	"translate_tabs_to_spaces": false,
-
-	// Set to false to disable detection of tabs vs. spaces on load
-	"detect_indentation": false,
-
-	// Calculates indentation automatically when pressing enter
-	"auto_indent": true,
-
-	// Makes auto indent a little smarter, e.g., by indenting the next line
-	// after an if statement in C. Requires auto_indent to be enabled.
-	"smart_indent": true,
-
-	// Adds whitespace up to the first open bracket when indenting. Requires
-	// auto_indent to be enabled.
-	"indent_to_bracket": true,
-
-	// Trims white space added by auto_indent when moving the caret off the
-	// line.
-	"trim_automatic_white_space": true,
-
-	// Disables horizontal scrolling if enabled.
-	// May be set to true, false, or "auto", where it will be disabled for
-	// source code, and otherwise enabled.
-	"word_wrap": true,
-
-	// Set to false to prevent word wrapped lines from being indented to the same
-	// level
-	"indent_subsequent_lines": true,
-
-	// Controls auto pairing of quotes, brackets etc
-	"auto_match_enabled": true,
-
-	// Set to true to draw a border around the visible rectangle on the minimap.
-	// The color of the border will be determined by the "minimapBorder" key in
-	// the color scheme
-	"draw_minimap_border": true,
-
-	// If enabled, will highlight any line with a caret
-	"highlight_line": true,
-
-	// Valid values are "smooth", "phase", "blink", "wide" and "solid".
-	"caret_style": "smooth",
-
-	// Set to false to not highlight angle brackets. This only takes effect if
-	// match_brackets is true
-	"match_brackets_angle": true,
-
-	// Set to false to disable scrolling past the end of the buffer.
-	// On OS X, this value is overridden in the platform specific settings, so
-	// you'll need to place this line in your user settings to override it.
-	"scroll_past_end": false,
-
-	// Set to "none" to turn off drawing white space, "selection" to draw only the
-	// white space within the selection, and "all" to draw all white space
-	"draw_white_space": "selection",
-
-	// Set to true to removing trailing white space on save
-	"trim_trailing_white_space_on_save": true,
-
-	// Set to true to automatically save files when switching to a different file
-	// or application
-	"save_on_focus_lost": false,
-
-	// The encoding to use when the encoding can't be determined automatically.
-	// ASCII, UTF-8 and UTF-16 encodings will be automatically detected.
-	"fallback_encoding": "Western (Windows 1252)",
-
-	// When enabled, pressing tab will insert the best matching completion.
-	// When disabled, tab will only trigger snippets or insert a tab.
-	// Shift+tab can be used to insert an explicit tab when tab_completion is
-	// enabled.
-	"tab_completion": true,
-
-	// Enable auto complete to be triggered automatically when typing.
-	"auto_complete": true,
-
-	// If true, the copy and cut commands will operate on the current line
-	// when the selection is empty, rather than doing nothing.
-	"copy_with_empty_selection": true,
-
-	// If true, the selected text will be copied into the find panel when it's
-	// shown.
-	// On OS X, this value is overridden in the platform specific settings, so
-	// you'll need to place this line in your user settings to override it.
-	"find_selected_text": true,
-
-	// When drag_text is enabled, clicking on selected text will begin a
-	// drag-drop operation
-	"drag_text": true,
-
-	//
-	// User Interface Settings
-	//
-
-	// The theme controls the look of Sublime Text's UI (buttons, tabs, scroll bars, etc)
-	"theme": "Default.sublime-theme",
-
-	// Controls side bar animation when expanding or collapsing folders
-	"tree_animation_enabled": false,
-
-	// Makes tabs with modified files more visible
-	"highlight_modified_tabs": true,
-
-	// Show folders in the side bar in bold
-	"bold_folder_labels": true,
-
-	//
-	// Application Behavior Settings
-	//
-
-	"hot_exit": true,
-
-	// OS X only: When files are opened from finder, or by dragging onto the
-	// dock icon, this controls if a new window is created or not.
-	"open_files_in_new_window": false,
-
-	// OS X only: This controls if an empty window is created at startup or not.
-	"create_window_at_startup": false,
-
-	// Show the full path to files in the title bar.
-	// On OS X, this value is overridden in the platform specific settings, so
-	// you'll need to place this line in your user settings to override it.
-	"show_full_path": true,
-
-	// Preview file contents when clicking on a file in the side bar. Double
-	// clicking or editing the preview will open the file and assign it a tab.
-	"preview_on_click": false,
-
-	// folder_exclude_patterns and file_exclude_patterns control which files
-	// are listed in folders on the side bar. These can also be set on a per-
-	// project basis.
-	"folder_exclude_patterns": [".svn", ".git", ".hg", "CVS", "node_modules", ".sass-cache"],
-	"file_exclude_patterns": ["*.pyc", "*.pyo", "*.exe", "*.dll", "*.obj","*.o", "*.a", "*.lib", "*.so", "*.dylib", "*.ncb", "*.sdf", "*.suo", "*.pdb", "*.idb", ".DS_Store", "*.class", "*.psd", "*.db"],
-	// These files will still show up in the side bar, but won't be included in
-	// Goto Anything or Find in Files
-	"binary_file_patterns": ["*.jpg", "*.jpeg", "*.png", "*.gif", "*.ttf", "*.tga", "*.dds", "*.ico", "*.eot", "*.pdf", "*.swf", "*.jar", "*.zip"],
-
-	"ignored_packages":
-	[
-		"Vintage"
-	]
+  "always_show_minimap_viewport": true,
+  "auto_complete": true,
+  "auto_indent": true,
+  "auto_match_enabled": true,
+  "binary_file_patterns":
+  [
+    "*.jpg",
+    "*.jpeg",
+    "*.png",
+    "*.gif",
+    "*.ttf",
+    "*.tga",
+    "*.dds",
+    "*.ico",
+    "*.eot",
+    "*.pdf",
+    "*.swf",
+    "*.jar",
+    "*.zip"
+  ],
+  "bold_folder_labels": true,
+  "caret_style": "smooth",
+  "color_scheme": "Packages/Color Scheme - Default/Twilight.tmTheme",
+  "copy_with_empty_selection": true,
+  "create_window_at_startup": false,
+  "detect_indentation": false,
+  "drag_text": true,
+  "draw_minimap_border": true,
+  "draw_white_space": "selection",
+  "fade_fold_buttons": false,
+  "fallback_encoding": "Western (Windows 1252)",
+  "file_exclude_patterns":
+  [
+    "*.pyc",
+    "*.pyo",
+    "*.exe",
+    "*.dll",
+    "*.obj",
+    "*.o",
+    "*.a",
+    "*.lib",
+    "*.so",
+    "*.dylib",
+    "*.ncb",
+    "*.sdf",
+    "*.suo",
+    "*.pdb",
+    "*.idb",
+    ".DS_Store",
+    "*.class",
+    "*.psd",
+    "*.db"
+  ],
+  "find_selected_text": true,
+  "folder_exclude_patterns":
+  [
+    ".svn",
+    ".git",
+    ".hg",
+    "CVS",
+    "node_modules",
+    ".sass-cache"
+  ],
+  "font_size": 12.0,
+  "highlight_line": true,
+  "highlight_modified_tabs": true,
+  "hot_exit": true,
+  "ignored_packages":
+  [
+    "Vintage"
+  ],
+  "indent_subsequent_lines": true,
+  "indent_to_bracket": true,
+  "margin": 0,
+  "match_brackets_angle": true,
+  "open_files_in_new_window": false,
+  "preview_on_click": false,
+  "save_on_focus_lost": false,
+  "scroll_past_end": false,
+  "show_full_path": true,
+  "smart_indent": true,
+  "tab_completion": true,
+  "tab_size": 2,
+  "theme": "Default.sublime-theme",
+  "translate_tabs_to_spaces": true,
+  "tree_animation_enabled": false,
+  "trim_automatic_white_space": true,
+  "trim_trailing_white_space_on_save": true,
+  "word_wrap": true
 }
