@@ -6,27 +6,54 @@ alias .....="cd ../../../.."
 alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
-# Shortcuts
-alias cl="clear"
+# Directory Shortcuts
 alias d="cd ~/Documents/Dropbox"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias p="cd ~/Projects"
 alias si="cd ~/Sites"
-alias g="git"
-alias g="git"
-alias gut="git"
-alias got="git"
-alias gti="git"
+
+# DSD Directory Shortcuts
+alias ff="cd ~/Sites/formfinder"
+alias cf="cd ~/Sites/courtfinder"
+alias trib="cd ~/Sites/tribunals"
+alias depl="cd ~/Sites/deployment"
+alias tk="cd ~/Sites/moj_frontend_tookit"
+alias tkg="cd ~/Sites/moj_frontend_tookit_gem"
+
+# General Shortcuts
+alias cl="clear"
 alias h="history"
 alias j="jobs"
 alias vi="vim"
 alias svi="sudo vi"
+alias reload="source ~/.bash_profile"
 
-# DSD Shortcuts
-alias ff="cd ~/Sites/formfinder"
+# Git
+alias g="git"
+alias gut="git"
+alias got="git"
+alias gti="git"
 
-# Sublime aliases
+# NodePM, Bower & Bundle
+alias npmi="npm install"
+alias npmg="npm install -g"
+alias npmu="npm update"
+alias npmr="npm uninstall"
+alias npmrg="npm uninstall -g"
+alias bo="bower"
+alias boi="bower install"
+alias bu="bundle"
+alias bui="bundle install"
+
+# Opening dotfiles
+alias .bp="st ~/.bash_profile"
+alias .bpt="st ~/.bash_prompt"
+alias .al="st ~/.aliases"
+alias .func="st ~/.functions"
+alias .gc="st ~/.gitconfig"
+
+# Apps
 alias st="subl"
 
 # Detect which `ls` flavor is in use
@@ -146,7 +173,7 @@ command -v grunt > /dev/null && alias grunt="grunt --stack"
 
 # Stuff I never really use but cannot delete either because of http://xkcd.com/530/
 alias stfu="osascript -e 'set volume output muted true'"
-alias pumpitup="osascript -e 'set volume 7'"
+alias pumpitup="osascript -e 'set volume 10'"
 alias hax="growlnotify -a 'Activity Monitor' 'System error' -m 'WTF R U DOIN'"
 
 # Kill all the tabs in Chrome to free up memory
