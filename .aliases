@@ -18,6 +18,8 @@ alias ff="cd ~/Sites/formfinder"
 alias cf="cd ~/Sites/courtfinder"
 alias trib="cd ~/Sites/tribunals"
 alias depl="cd ~/Sites/deployment"
+alias lpa="cd ~/Sites/opg-lpa"
+alias lpaapi="cd ~/Sites/opg-lpa-api"
 alias tk="cd ~/Sites/moj_frontend_tookit"
 alias tkg="cd ~/Sites/moj_frontend_tookit_gem"
 

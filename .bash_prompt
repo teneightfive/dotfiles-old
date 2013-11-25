@@ -6,6 +6,8 @@ fi
 
 # colours
 RESET="\[\033[m\]"
+BLACK="\[\033[0;30m\]"
+LBLACK="\[\033[1;30m\]"
 WHITE="\[\033[0;37m\]"
 LWHITE="\[\033[1;37m\]"
 RED="\[\033[0;31m\]"
@@ -46,7 +48,7 @@ function parse_git_branch() {
   git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/\1$(parse_git_dirty)/"
 }
 
-export PS1="${LBLUE}\u ${WHITE}in ${LBLUE}\w${WHITE}\$([[ -n \$(git branch 2> /dev/null) ]] && echo \" on \")${LBLUE}\$(parse_git_branch)${WHITE} \$ ${RESET}"
+export PS1="${LBLUE}\u ${WHITE}in ${LBLUE}\w${WHITE}\$([[ -n \$(git branch 2> /dev/null) ]] && echo \" on \")${LBLUE}\$(parse_git_branch)${LWHITE} \$ ${RESET}"
 # export PS2="\[$ORANGE\]→ \[$RESET\]"
 
 #export PS1="$BLUE\W $CYAN\$(ruby_ver) $LCYAN\$(rails_ver) $GREEN\$(git_br)$WHITE\n\$ "
