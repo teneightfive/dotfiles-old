@@ -42,7 +42,7 @@
   dt = difftool
   div = divergence
   h = help
-  ############ DIFF ############
+  ############ FETCH ############
   f = fetch
   fa = fetch --all
   prune = fetch --prune
@@ -70,10 +70,10 @@
   msg = commit --allow-empty -m
   news = log -p HEAD@{1}..HEAD@{0}
   ############ PUSH ############
-  ph = push
-  pht = push --tags
-  phu = push --set-upstream
-  phf = push --force
+  p = push
+  pt = push --tags
+  pu = push --set-upstream
+  pf = push --force
   ############ PULL ############
   pl = pull
   plr = pull --rebase
@@ -102,6 +102,7 @@
   sts = stash save
   stl = stash list
   stp = stash pop
+
   undo = reset --soft HEAD@{1}
   wd = diff --word-diff="color"
   wdc = diff --word-diff="color" --cached
