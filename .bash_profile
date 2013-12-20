@@ -1,7 +1,12 @@
 source ~/.bashrc
 
 # Add `~/bin` to the `$PATH`
-export PATH="$PATH:$HOME/bin:/Applications/Postgres.app/Contents/MacOS/bin"
+export PATH="/usr/local/bin:$PATH:/usr/local/sbin:$HOME/bin:/Applications/Postgres.app/Contents/MacOS/bin"
+export PATH=/usr/local/bin:/usr/local/sbin:${PATH}
+
+#virtualenv wrapper
+export WORKON_HOME=$HOME/.virtualenvs
+source /usr/local/bin/virtualenvwrapper.sh
 
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
