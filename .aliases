@@ -20,6 +20,8 @@ alias trib="cd ~/Sites/tribunals"
 alias depl="cd ~/Sites/deployment"
 alias lpa="cd ~/Sites/opg-lpa"
 alias lpaapi="cd ~/Sites/opg-lpa-api"
+alias lpafe="cd ~/Sites/opg-lpa-front-end"
+alias mojbp="cd ~/Sites/moj_boilerplate"
 alias tk="cd ~/Sites/moj_frontend_tookit"
 alias tkg="cd ~/Sites/moj_frontend_tookit_gem"
 
@@ -36,6 +38,8 @@ alias g="git"
 alias gut="git"
 alias got="git"
 alias gti="git"
+alias gca="git add --all && git commit" # stage & commit all
+alias gs="git s" # status
 
 # NodePM, Bower & Bundle
 alias npmi="npm install"

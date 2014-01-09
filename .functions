@@ -1,11 +1,19 @@
 # Install a grunt plugin and save to devDependencies
-function gi() {
+function gri() {
   npm install --save-dev grunt-"$@"
 }
 
 # Install a grunt-contrib plugin and save to devDependencies
-function gci() {
+function grci() {
   npm install --save-dev grunt-contrib-"$@"
+}
+
+# GIT
+function gcob() {
+  git checkout -b "$@" && git push -u origin "$@"
+}
+function gcp() {
+  git commit -am "$1" && git push
 }
 
 # Simple calculator
