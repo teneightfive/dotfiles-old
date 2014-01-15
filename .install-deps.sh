@@ -47,3 +47,18 @@ sudo easy_install Pygments
 
 # chrome canary as default
 # on a mac you can set chrome canary as your default inside of Safari preferences :)
+
+
+## Node packages
+
+# Install Grunt globally
+npm install -g grunt-cli
+
+# Install Bower globally
+npm install -g bower
+
+# Install PhantomJS globally
+npm install -g phantomjs
+
+# Install yeoman globally
+npm install -g yo
