@@ -28,8 +28,8 @@
   ############ CHECKOUT
   co = checkout
   cob = checkout -b
-  cobp = checkout -b
   cot = checkout -t
+  com = "!git checkout master; git pull;"
   ############ CHERRY PICK ############
   pick = cherry-pick
   cp = cherry-pick

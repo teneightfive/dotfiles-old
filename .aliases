@@ -61,6 +61,7 @@ alias .gc="st ~/.gitconfig"
 
 # Apps
 alias st="subl"
+alias chr="open /Applications/Google\ Chrome.app"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
