@@ -1,9 +1,18 @@
 #!/bin/bash
-cd "$(dirname "$0")"
+cd "$(dirname "${BASH_SOURCE}")"
 git pull
 function doIt() {
-  rsync --exclude "bin/" --exclude "init/" --exclude ".git/" --exclude ".DS_Store" --exclude ".cask" --exclude ".brew" --exclude ".osx" --exclude ".install-deps.sh" --exclude "sync.sh" --exclude "README.md" --exclude "Brewfile" -av --no-perms . ~
-  source ~/.bash_profile
+  rsync --exclude "init/" \
+        --exclude ".git/" \
+        --exclude ".DS_Store" \
+        --exclude ".cask" \
+        --exclude ".brew" \
+        --exclude ".osx" \
+        --exclude ".install-deps.sh" \
+        --exclude "sync.sh" \
+        --exclude "README.md" \
+        --exclude "Brewfile" \
+        -av . ~
 }
 if [ "$1" == "--force" -o "$1" == "-f" ]; then
   doIt
@@ -15,3 +24,4 @@ else
   fi
 fi
 unset doIt
+source ~/.bash_profile
